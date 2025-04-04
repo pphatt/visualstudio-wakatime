@@ -45,13 +45,12 @@ namespace WakaTime.ExtensionUtils
         public void SetText(string text)
         {
             ThreadHelper.ThrowIfNotOnUIThread();
-            Text = string.IsNullOrEmpty(text) ? Icon : $"{Icon} {text}";
+            Text = Icon;
         }
 
         public void SetToolTip(string toolTip)
         {
             ThreadHelper.ThrowIfNotOnUIThread();
-            ToolTip = toolTip;
         }
     }
 }
