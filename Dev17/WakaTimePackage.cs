@@ -416,7 +416,8 @@ namespace WakaTime
             {
                 toolTip += Environment.NewLine + totalTimeTodayDetailed;
             }
-            _statusbarControl?.SetToolTip(toolTip);
+
+            _statusbarControl?.SetToolTip("WakaTime currently tracking.");
         }
     }
 

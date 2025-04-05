@@ -51,6 +51,7 @@ namespace WakaTime.ExtensionUtils
         public void SetToolTip(string toolTip)
         {
             ThreadHelper.ThrowIfNotOnUIThread();
+            ToolTip = toolTip;
         }
     }
 }
